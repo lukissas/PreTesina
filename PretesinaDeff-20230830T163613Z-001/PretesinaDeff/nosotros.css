@@ -1,0 +1,416 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(6, 7, 15);
+    }
+  
+    body.fondoindex {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("img/fondorayas.jpg");
+      background-repeat: no-repeat;
+      background-color: #151823;
+      margin: 0;
+      min-height: 100vh;
+      background-size: cover; /* Cambiar a "cover" */
+    }
+    
+  
+  /* Estilos para el encabezado */
+  header {
+    color: #fd6262; /* Texto en negro */
+    padding: 20px;
+    background: rgb(15, 15, 15);
+  }
+  
+  
+  .header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: all 0.6s ease; /* Efecto de transición */
+    margin: 0;
+  }
+  
+  header h1:hover {
+    font-size: 70px;
+    color: #c20f0f; /* Cambia a color rosado cuando pasas el cursor */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 5px;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0px 5px;
+  }
+  
+  .redcolor {
+    color: white;
+    transition: color 0.6s; /* Efecto de transición */
+  }
+  
+  .redcolor:hover {
+    color: #fd6262;
+  }
+  
+  .whitecolor {
+    color: white;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 13px 20px 3px 20px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white; /* Establecemos el color inicial para todos los enlaces */
+  }
+  
+  .login {
+    color: #fd6262;
+    transition: color 0.6s; /* Efecto de transición */
+  }
+  
+  .login:hover {
+    color: #b90b0b; /* Cambia el color a verde cuando pasas el cursor */
+  }
+  
+  .register {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 18px;
+    transition: background-color 0.6s, color 0.6s, border 0.6s ; /* Efecto de transición */
+  }
+  
+  .register:hover {
+    border: 1px solid #2165ca;
+    background-color: #2165ca; /* Cambia el color de fondo a celeste cuando pasas el cursor */
+    color: black; /* Cambia el color de la letra a negro cuando pasas el cursor */
+  }
+  
+  /* Estilos para el contenedor del nombre de usuario */
+  .user_info {
+    margin: 0px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 20px;
+    border: 2px solid #60167d;
+    border-radius: 30px; /* Hacemos un borde más redondeado */
+    background-color: #60167d; /* Color de fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Quitamos la decoración de enlace */
+  }
+  
+  .user_info:hover {
+    background-color: #410070; /* Cambia el color de fondo cuando pasas el cursor */
+  }
+  
+  
+  .contraste{
+    color: rgb(224, 224, 224);
+  }
+  
+  /* Estilos para las secciones */
+  section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }  
+  
+    /* Estilos para el contenido de cada sección */
+    .content {
+      flex: 1;
+      max-width: 50%;
+      padding: 20px;
+      border-radius: 80px 5%;
+      background: rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      margin: 20px;
+    }
+    
+    /* Estilos adicionales para mejorar la apariencia */
+    h2 {
+      color: #000000; /* Color del título */
+      font-size: 30px;
+      background-color: #d8ab70;
+      border-radius: 25px;
+      margin: 50px;
+      text-align: center;
+    }
+    
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      color: rgb(231, 231, 231);
+    }
+    
+  
+  h4 {
+    font-size: 40px;
+    color: #eff0f5;
+  }
+  
+
+
+  .footer {
+    padding-block: 5rem;
+    background-color: #151823;
+    color: #666873;
+  }
+  
+  .footer_container {
+    max-width: 116rem;
+    margin: auto;
+    padding: 0 1.5rem;
+  }
+  
+  .footer_top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .footer_title {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin: 20px;
+  }
+  
+  
+  
+  .footer_list-item {
+    list-style: none;
+  }
+  
+  .footer_list-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color .25s;
+  }
+  
+  .footer_list-link:hover {
+    color: #fff;
+  }
+  
+  .company_info {
+    flex-basis: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 5rem;
+  }
+  
+  .company_logo {
+    color: #fff;
+    margin: 20px;
+    font-size: 30px;
+  }
+  
+  .company_info ul {
+    flex-direction: row;
+  }
+  
+  .company_info_description {
+    color: #666873;
+    margin: 20px;
+  }
+  
+  @media screen and (min-width: 40em) {
+    .company_info {
+      flex-basis: calc(33.33% - 2rem);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  /*esto es para el conacto*/
+  
+  
+.bodyy {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #000000;
+  }
+
+  .conatiner {
+      position: absolute; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1000px;
+      height: 500px;
+      display: flex;
+    }
+  
+    .conatiner .boxx {
+      position: relative;
+      width: 250px;
+      height: 500px;
+      background: #ccc;
+      transition: 0.5s;
+    }
+  
+    .conatiner .boxx:hover {
+      transform: scale(1.1);
+      z-index: 1;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    }
+  
+    .conatiner .boxx .thumm {
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+  
+    .conatiner .boxx:nth-child(odd) .thumm { 
+        bottom: 0;
+        left: 0;
+    }
+  
+    .conatiner .boxx .thumm img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+    .conatiner .boxx .detailss {
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        background-color: #262626;
+    }
+
+    .conatiner .boxx:nth-child(even) .detailss {
+        bottom: 0;
+        left: 0;
+    }
+
+    .conatiner .boxx:nth-child(1) .detailss {
+        background-color: #e34934;
+    }
+
+    .conatiner .boxx:nth-child(2) .detailss {
+        background-color: #1e6de3;
+    }
+    .conatiner .boxx:nth-child(3) .detailss {
+        background-color: #05964f;
+    }
+    .conatiner .boxx:nth-child(4) .detailss {
+        background-color: #148d96;
+    }
+
+    .conatiner .boxx .detailss .contentt {
+        position: absolute;
+        top: calc(50% + 16px);
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .conatiner:hover .boxx .detailss .contentt{
+        top: calc(50%);
+    }
+    .conatiner .boxx .detailss .contentt .fa{
+        font-size: 80px;
+        color: #fff;
+    }
+    .conatiner .boxx .detailss .contentt h3{
+        margin: 0;
+        padding: 0;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .conatiner .boxx .detailss .contentt a{
+        padding: 5px 20px;
+        color: #fff;
+        border: 2px solid #fff;
+        text-decoration: none;
+        transition: 0.5s;
+        border-radius: 20px;
+        transform: scale(0);
+    }
+    
+    .conatiner .boxx:hover .detailss .contentt a{
+        transform:scale (1);
+    }
+    .conatiner .boxx .detailss .contentt a:hover{
+        background-color: #fff;
+        color: #262626;
+    }
+    @media(max-width: 1000px){
+        .conatiner{
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .conatiner .boxx{
+            height: 250px;
+        }
+        .conatiner .boxx .thumm{
+            display: none;
+        }
+    }
+    @media(max-width: 768px){
+        .conatiner{
+            display: inline-block;
+        }
+        .conatiner .boxx{
+            width: 50%;
+            height: 250px;
+            float: left;
+        }
+    }
+    @media(max-width: 480px){
+        .conatiner{
+            margin: 0;
+            left: 0;
+            top: 0;
+            transform: translate(0);
+        }
+        .conatiner .boxx {
+            width: 100%;
+            height: 250px;
+            float: left;
+        }
+    }
+
+
+
+
+
+
+
+    
+
